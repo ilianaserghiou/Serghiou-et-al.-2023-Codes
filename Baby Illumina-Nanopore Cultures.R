@@ -12,22 +12,22 @@ library("reshape2")
 setwd("C:/Users/serghioi/Documents/QIB/PhD - Development and Evolution Of The Infant Skin Microbiome/Data Collection/DNA Extrac. Method Development/Data Plots/Promega Maxwell DNA Extraction PEARL Baby Swabs Run 6/Illumina vs Nanopore Cult")
 
 # Import the csv file.
-Baby_1_Month_4_Swab_Culture_Illumina <- read_csv("0861-E001.csv")
+Baby_1_Month_4_Swab_Culture_Illumina <- read_csv("0861-1.csv")
 # Select only the "name" and "fraction_total_reads" columns.
 Baby_1_Month_4_Swab_Culture_Illumina <- Baby_1_Month_4_Swab_Culture_Illumina %>% select(name, fraction_total_reads)
 # Rename the "fraction_total_reads" column as the sample Id name.
 names(Baby_1_Month_4_Swab_Culture_Illumina)[names(Baby_1_Month_4_Swab_Culture_Illumina) == "fraction_total_reads"] <- "Baby_1_Month_4_Swab_Culture_Illumina"
 
 # Repeat with the other csv files.
-Baby_2_Month_4_Swab_Culture_Illumina <- read_csv("0861-E002.csv")
+Baby_2_Month_4_Swab_Culture_Illumina <- read_csv("0861-2.csv")
 Baby_2_Month_4_Swab_Culture_Illumina <- Baby_2_Month_4_Swab_Culture_Illumina %>% select(name, fraction_total_reads)
 names(Baby_2_Month_4_Swab_Culture_Illumina)[names(Baby_2_Month_4_Swab_Culture_Illumina) == "fraction_total_reads"] <- "Baby_2_Month_4_Swab_Culture_Illumina"
 
-Baby_5_Twin_1_Month_4_Swab_Culture_Illumina <- read_csv("0861-E005-1.csv")
+Baby_5_Twin_1_Month_4_Swab_Culture_Illumina <- read_csv("0861-5-1.csv")
 Baby_5_Twin_1_Month_4_Swab_Culture_Illumina <- Baby_5_Twin_1_Month_4_Swab_Culture_Illumina %>% select(name, fraction_total_reads)
 names(Baby_5_Twin_1_Month_4_Swab_Culture_Illumina)[names(Baby_5_Twin_1_Month_4_Swab_Culture_Illumina) == "fraction_total_reads"] <- "Baby_5_Twin_1_Month_4_Swab_Culture_Illumina"
 
-Baby_6_Month_4_Swab_Culture_Illumina <- read_csv("0861-E006.csv") 
+Baby_6_Month_4_Swab_Culture_Illumina <- read_csv("0861-6.csv") 
 Baby_6_Month_4_Swab_Culture_Illumina <- Baby_6_Month_4_Swab_Culture_Illumina %>% select(name, fraction_total_reads)
 names(Baby_6_Month_4_Swab_Culture_Illumina)[names(Baby_6_Month_4_Swab_Culture_Illumina) == "fraction_total_reads"] <- "Baby_6_Month_4_Swab_Culture_Illumina"
 
@@ -39,19 +39,19 @@ Positive_Control_Illumina <- read_csv("0861-Pos-Con.csv")
 Positive_Control_Illumina <- Positive_Control_Illumina %>% select(name, fraction_total_reads)
 names(Positive_Control_Illumina)[names(Positive_Control_Illumina) == "fraction_total_reads"] <- "Positive_Control_Illumina"
 
-Baby_1_Month_4_Swab_Culture_Nanopore <- read_csv("0862-E001.csv")
+Baby_1_Month_4_Swab_Culture_Nanopore <- read_csv("0862-1.csv")
 Baby_1_Month_4_Swab_Culture_Nanopore <- Baby_1_Month_4_Swab_Culture_Nanopore %>% select(name, fraction_total_reads)
 names(Baby_1_Month_4_Swab_Culture_Nanopore)[names(Baby_1_Month_4_Swab_Culture_Nanopore) == "fraction_total_reads"] <- "Baby_1_Month_4_Swab_Culture_Nanopore"
 
-Baby_2_Month_4_Swab_Culture_Nanopore <- read_csv("0862-E002.csv")
+Baby_2_Month_4_Swab_Culture_Nanopore <- read_csv("0862-2.csv")
 Baby_2_Month_4_Swab_Culture_Nanopore <- Baby_2_Month_4_Swab_Culture_Nanopore %>% select(name, fraction_total_reads)
 names(Baby_2_Month_4_Swab_Culture_Nanopore)[names(Baby_2_Month_4_Swab_Culture_Nanopore) == "fraction_total_reads"] <- "Baby_2_Month_4_Swab_Culture_Nanopore"
 
-Baby_5_Twin_1_Month_4_Swab_Culture_Nanopore <- read_csv("0862-E005-1.csv")
+Baby_5_Twin_1_Month_4_Swab_Culture_Nanopore <- read_csv("0862-5-1.csv")
 Baby_5_Twin_1_Month_4_Swab_Culture_Nanopore <- Baby_5_Twin_1_Month_4_Swab_Culture_Nanopore %>% select(name, fraction_total_reads)
 names(Baby_5_Twin_1_Month_4_Swab_Culture_Nanopore)[names(Baby_5_Twin_1_Month_4_Swab_Culture_Nanopore) == "fraction_total_reads"] <- "Baby_5_Twin_1_Month_4_Swab_Culture_Nanopore"
 
-Baby_6_Month_4_Swab_Culture_Nanopore <- read_csv("0862-E006.csv") 
+Baby_6_Month_4_Swab_Culture_Nanopore <- read_csv("0862-6.csv") 
 Baby_6_Month_4_Swab_Culture_Nanopore <- Baby_6_Month_4_Swab_Culture_Nanopore %>% select(name, fraction_total_reads)
 names(Baby_6_Month_4_Swab_Culture_Nanopore)[names(Baby_6_Month_4_Swab_Culture_Nanopore) == "fraction_total_reads"] <- "Baby_6_Month_4_Swab_Culture_Nanopore"
 
