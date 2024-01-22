@@ -12,46 +12,46 @@ library("reshape2")
 setwd("C:/Users/serghioi/Documents/QIB/PhD - Development and Evolution Of The Infant Skin Microbiome/Data Collection/DNA Extrac. Method Development/Data Plots/Promega Maxwell DNA Extraction PEARL Baby Swabs Run 6/Illumina Swab vs Nanopore Swab")
 
 # Import the csv file.
-Baby_1_Month_4_Swab_Illumina <- read_csv("0861-E001-Brack.csv")
+Baby_1_Month_4_Swab_Illumina <- read_csv("0861-1-Brack.csv")
 # Select only the "name" and "fraction_total_reads" columns.
 Baby_1_Month_4_Swab_Illumina <- Baby_1_Month_4_Swab_Illumina %>% select(name, fraction_total_reads)
 # Rename the "fraction_total_reads" column as the sample Id name.
 names(Baby_1_Month_4_Swab_Illumina)[names(Baby_1_Month_4_Swab_Illumina) == "fraction_total_reads"] <- "Baby_1_Month_4_Swab_Illumina"
 
 # Repeat with the other csv files.
-Baby_2_Month_4_Swab_Illumina <- read_csv("0861-E002-Brack.csv")
+Baby_2_Month_4_Swab_Illumina <- read_csv("0861-2-Brack.csv")
 Baby_2_Month_4_Swab_Illumina <- Baby_2_Month_4_Swab_Illumina %>% select(name, fraction_total_reads)
 names(Baby_2_Month_4_Swab_Illumina)[names(Baby_2_Month_4_Swab_Illumina) == "fraction_total_reads"] <- "Baby_2_Month_4_Swab_Illumina"
 
-Baby_3_Month_4_Swab_Illumina <- read_csv("0861-E003-Brack.csv")
+Baby_3_Month_4_Swab_Illumina <- read_csv("0861-3-Brack.csv")
 Baby_3_Month_4_Swab_Illumina <- Baby_3_Month_4_Swab_Illumina %>% select(name, fraction_total_reads)
 names(Baby_3_Month_4_Swab_Illumina)[names(Baby_3_Month_4_Swab_Illumina) == "fraction_total_reads"] <- "Baby_3_Month_4_Swab_Illumina"
 
-Baby_5_Twin_1_Month_4_Swab_Illumina <- read_csv("0861-E005-1-Brack.csv")
+Baby_5_Twin_1_Month_4_Swab_Illumina <- read_csv("0861-5-1-Brack.csv")
 Baby_5_Twin_1_Month_4_Swab_Illumina <- Baby_5_Twin_1_Month_4_Swab_Illumina %>% select(name, fraction_total_reads)
 names(Baby_5_Twin_1_Month_4_Swab_Illumina)[names(Baby_5_Twin_1_Month_4_Swab_Illumina) == "fraction_total_reads"] <- "Baby_5_Twin_1_Month_4_Swab_Illumina"
 
-Baby_5_Twin_2_Month_4_Swab_Illumina <- read_csv("0861-E005-2-Brack.csv")
+Baby_5_Twin_2_Month_4_Swab_Illumina <- read_csv("0861-5-2-Brack.csv")
 Baby_5_Twin_2_Month_4_Swab_Illumina <- Baby_5_Twin_2_Month_4_Swab_Illumina %>% select(name, fraction_total_reads)
 names(Baby_5_Twin_2_Month_4_Swab_Illumina)[names(Baby_5_Twin_2_Month_4_Swab_Illumina) == "fraction_total_reads"] <- "Baby_5_Twin_2_Month_4_Swab_Illumina"
 
-Baby_6_Month_4_Swab_Illumina <- read_csv("0861-E006-Brack.csv") 
+Baby_6_Month_4_Swab_Illumina <- read_csv("0861-6-Brack.csv") 
 Baby_6_Month_4_Swab_Illumina <- Baby_6_Month_4_Swab_Illumina %>% select(name, fraction_total_reads)
 names(Baby_6_Month_4_Swab_Illumina)[names(Baby_6_Month_4_Swab_Illumina) == "fraction_total_reads"] <- "Baby_6_Month_4_Swab_Illumina"
 
-Baby_7_Month_4_Swab_Illumina <- read_csv("0861-E007-Brack.csv") 
+Baby_7_Month_4_Swab_Illumina <- read_csv("0861-7-Brack.csv") 
 Baby_7_Month_4_Swab_Illumina <- Baby_7_Month_4_Swab_Illumina %>% select(name, fraction_total_reads)
 names(Baby_7_Month_4_Swab_Illumina)[names(Baby_7_Month_4_Swab_Illumina) == "fraction_total_reads"] <- "Baby_7_Month_4_Swab_Illumina"
 
-Baby_8_Month_4_Swab_Illumina <- read_csv("0861-E008-Brack.csv") 
+Baby_8_Month_4_Swab_Illumina <- read_csv("0861-8-Brack.csv") 
 Baby_8_Month_4_Swab_Illumina <- Baby_8_Month_4_Swab_Illumina %>% select(name, fraction_total_reads)
 names(Baby_8_Month_4_Swab_Illumina)[names(Baby_8_Month_4_Swab_Illumina) == "fraction_total_reads"] <- "Baby_8_Month_4_Swab_Illumina"
 
-Baby_9_Month_4_Swab_Illumina <- read_csv("0861-E009-Brack.csv") 
+Baby_9_Month_4_Swab_Illumina <- read_csv("0861-9-Brack.csv") 
 Baby_9_Month_4_Swab_Illumina <- Baby_9_Month_4_Swab_Illumina %>% select(name, fraction_total_reads)
 names(Baby_9_Month_4_Swab_Illumina)[names(Baby_9_Month_4_Swab_Illumina) == "fraction_total_reads"] <- "Baby_9_Month_4_Swab_Illumina"
 
-Baby_10_Month_4_Swab_Illumina <- read_csv("0861-E010-Brack.csv") 
+Baby_10_Month_4_Swab_Illumina <- read_csv("0861-10-Brack.csv") 
 Baby_10_Month_4_Swab_Illumina <- Baby_10_Month_4_Swab_Illumina %>% select(name, fraction_total_reads)
 names(Baby_10_Month_4_Swab_Illumina)[names(Baby_10_Month_4_Swab_Illumina) == "fraction_total_reads"] <- "Baby_10_Month_4_Swab_Illumina"
 
@@ -63,43 +63,43 @@ Positive_Control_Illumina <- read_csv("0861-Pos-Brack.csv")
 Positive_Control_Illumina <- Positive_Control_Illumina %>% select(name, fraction_total_reads)
 names(Positive_Control_Illumina)[names(Positive_Control_Illumina) == "fraction_total_reads"] <- "Positive_Control_Illumina"
 
-Baby_1_Month_4_Swab_Nanopore <- read_csv("0862-E001-Brack.csv")
+Baby_1_Month_4_Swab_Nanopore <- read_csv("0862-1-Brack.csv")
 Baby_1_Month_4_Swab_Nanopore <- Baby_1_Month_4_Swab_Nanopore %>% select(name, fraction_total_reads)
 names(Baby_1_Month_4_Swab_Nanopore)[names(Baby_1_Month_4_Swab_Nanopore) == "fraction_total_reads"] <- "Baby_1_Month_4_Swab_Nanopore"
 
-Baby_2_Month_4_Swab_Nanopore <- read_csv("0862-E002-Brack.csv")
+Baby_2_Month_4_Swab_Nanopore <- read_csv("0862-2-Brack.csv")
 Baby_2_Month_4_Swab_Nanopore <- Baby_2_Month_4_Swab_Nanopore %>% select(name, fraction_total_reads)
 names(Baby_2_Month_4_Swab_Nanopore)[names(Baby_2_Month_4_Swab_Nanopore) == "fraction_total_reads"] <- "Baby_2_Month_4_Swab_Nanopore"
 
-Baby_3_Month_4_Swab_Nanopore <- read_csv("0862-E003-Brack.csv")
+Baby_3_Month_4_Swab_Nanopore <- read_csv("0862-3-Brack.csv")
 Baby_3_Month_4_Swab_Nanopore <- Baby_3_Month_4_Swab_Nanopore %>% select(name, fraction_total_reads)
 names(Baby_3_Month_4_Swab_Nanopore)[names(Baby_3_Month_4_Swab_Nanopore) == "fraction_total_reads"] <- "Baby_3_Month_4_Swab_Nanopore"
 
-Baby_5_Twin_1_Month_4_Swab_Nanopore <- read_csv("0862-E005-1-Brack.csv")
+Baby_5_Twin_1_Month_4_Swab_Nanopore <- read_csv("0862-5-1-Brack.csv")
 Baby_5_Twin_1_Month_4_Swab_Nanopore <- Baby_5_Twin_1_Month_4_Swab_Nanopore %>% select(name, fraction_total_reads)
 names(Baby_5_Twin_1_Month_4_Swab_Nanopore)[names(Baby_5_Twin_1_Month_4_Swab_Nanopore) == "fraction_total_reads"] <- "Baby_5_Twin_1_Month_4_Swab_Nanopore"
 
-Baby_5_Twin_2_Month_4_Swab_Nanopore <- read_csv("0862-E005-2-Brack.csv")
+Baby_5_Twin_2_Month_4_Swab_Nanopore <- read_csv("0862-5-2-Brack.csv")
 Baby_5_Twin_2_Month_4_Swab_Nanopore <- Baby_5_Twin_2_Month_4_Swab_Nanopore %>% select(name, fraction_total_reads)
 names(Baby_5_Twin_2_Month_4_Swab_Nanopore)[names(Baby_5_Twin_2_Month_4_Swab_Nanopore) == "fraction_total_reads"] <- "Baby_5_Twin_2_Month_4_Swab_Nanopore"
 
-Baby_6_Month_4_Swab_Nanopore <- read_csv("0862-E006-Brack.csv") 
+Baby_6_Month_4_Swab_Nanopore <- read_csv("0862-6-Brack.csv") 
 Baby_6_Month_4_Swab_Nanopore <- Baby_6_Month_4_Swab_Nanopore %>% select(name, fraction_total_reads)
 names(Baby_6_Month_4_Swab_Nanopore)[names(Baby_6_Month_4_Swab_Nanopore) == "fraction_total_reads"] <- "Baby_6_Month_4_Swab_Nanopore"
 
-Baby_7_Month_4_Swab_Nanopore <- read_csv("0862-E007-Brack.csv") 
+Baby_7_Month_4_Swab_Nanopore <- read_csv("0862-7-Brack.csv") 
 Baby_7_Month_4_Swab_Nanopore <- Baby_7_Month_4_Swab_Nanopore %>% select(name, fraction_total_reads)
 names(Baby_7_Month_4_Swab_Nanopore)[names(Baby_7_Month_4_Swab_Nanopore) == "fraction_total_reads"] <- "Baby_7_Month_4_Swab_Nanopore"
 
-Baby_8_Month_4_Swab_Nanopore <- read_csv("0862-E008-Brack.csv") 
+Baby_8_Month_4_Swab_Nanopore <- read_csv("0862-8-Brack.csv") 
 Baby_8_Month_4_Swab_Nanopore <- Baby_8_Month_4_Swab_Nanopore %>% select(name, fraction_total_reads)
 names(Baby_8_Month_4_Swab_Nanopore)[names(Baby_8_Month_4_Swab_Nanopore) == "fraction_total_reads"] <- "Baby_8_Month_4_Swab_Nanopore"
 
-Baby_9_Month_4_Swab_Nanopore <- read_csv("0862-E009-Brack.csv") 
+Baby_9_Month_4_Swab_Nanopore <- read_csv("0862-9-Brack.csv") 
 Baby_9_Month_4_Swab_Nanopore <- Baby_9_Month_4_Swab_Nanopore %>% select(name, fraction_total_reads)
 names(Baby_9_Month_4_Swab_Nanopore)[names(Baby_9_Month_4_Swab_Nanopore) == "fraction_total_reads"] <- "Baby_9_Month_4_Swab_Nanopore"
 
-Baby_10_Month_4_Swab_Nanopore <- read_csv("0862-E010-Brack.csv") 
+Baby_10_Month_4_Swab_Nanopore <- read_csv("0862-10-Brack.csv") 
 Baby_10_Month_4_Swab_Nanopore <- Baby_10_Month_4_Swab_Nanopore %>% select(name, fraction_total_reads)
 names(Baby_10_Month_4_Swab_Nanopore)[names(Baby_10_Month_4_Swab_Nanopore) == "fraction_total_reads"] <- "Baby_10_Month_4_Swab_Nanopore"
 
